@@ -620,3 +620,7 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+label {
+  margin-left: 10px;
+}
