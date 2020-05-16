@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 const Result = props => {
   return (
     <div className="result">
-      You prefer <strong>{props.quizResult}</strong>!
+      You scored <strong>{props.quizResult}</strong> out of 5!
     </div>
   )
 }

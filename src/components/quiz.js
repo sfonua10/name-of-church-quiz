@@ -6,13 +6,14 @@ import AnswerOption from "./answerOption"
 
 const Quiz = ({
   answer,
-  onAnswerSelected,
-  questionId,
-  questionTotal,
-  question,
   answerOptions,
+  questionId,
+  question,
+  questionTotal,
+  onAnswerSelected,
 }) => {
   const renderAnswerOptions = key => {
+    // console.log("key", key)
     return (
       <AnswerOption
         key={key.content}

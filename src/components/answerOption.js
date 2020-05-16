@@ -12,9 +12,9 @@ const AnswerOption = ({
       <input
         type="radio"
         name="radioGroup"
-        checked={answerType === answer}
         id={answerType}
         value={answerType}
+        // checked={answer === answerType}
         disabled={answer}
         onChange={onAnswerSelected}
       />

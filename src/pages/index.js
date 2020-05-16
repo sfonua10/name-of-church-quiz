@@ -13,84 +13,67 @@ const IndexPage = () => {
   const [question, setQuestion] = useState("")
   const [answerOptions, setAnswerOptions] = useState([])
   const [answer, setAnswer] = useState("")
-  const [answersCount, setAnswersCount] = useState({})
-  const [result, setResult] = useState("")
-  const [quizQuestions, setQuizQuestion] = useState([])
+  const [result, setResult] = useState(false)
+  const [selectedAnswer, setSelectedAnswer] = useState("")
+  const [count, setCount] = useState(0)
 
   useEffect(() => {
     const shuffledAnswerOptions = quizQuestionsArr.map(question =>
       shuffleArray(question.answers)
     )
+    setCounter(0)
     setQuestion(quizQuestionsArr[0].question)
-    setQuizQuestion(quizQuestions)
     setAnswerOptions(shuffledAnswerOptions[0])
   }, [])
-
-  console.log("answerOptions", answerOptions)
-
-  const handleAnswerSelected = event => {
-    setUserAnswer(event.currentTarget.value)
-    if (questionId < quizQuestions.length) {
-      setTimeout(() => setNextQuestion(), 300)
-    } else {
-      setTimeout(() => setResults(getResults()), 300)
-    }
-  }
-
-  const setUserAnswer = answer => {
-    setAnswersCount({
-      ...answersCount,
-      [answer]: (answersCount[answer] || 0) + 1,
-    })
-    setAnswer(answer)
-  }
 
   const setNextQuestion = () => {
     const myCounter = counter + 1
     const myQuestionId = questionId + 1
     setCounter(myCounter)
     setQuestionId(myQuestionId)
-    setQuestion(quizQuestions[myCounter].question)
-    setAnswerOptions(quizQuestions[myCounter].answers)
+    setQuestion(quizQuestionsArr[myCounter].question)
+    setAnswerOptions(quizQuestionsArr[myCounter].answers)
     setAnswer("")
   }
 
-  const getResults = () => {
-    const myAnswersCount = answersCount
-    const answersCountKeys = Object.keys(myAnswersCount)
-    const answersCountValues = answersCountKeys.map(key => myAnswersCount[key])
-    const maxAnswerCount = Math.max.apply(null, answersCountValues)
-
-    return answersCountKeys.filter(
-      key => myAnswersCount[key] === maxAnswerCount
-    )
+  const handleSelectedAnswer = e => {
+    setSelectedAnswer(e.currentTarget.value)
   }
 
-  const setResults = result => {
-    if (result.length === 1) {
-      setResult(result[0])
+  const handleSubmit = e => {
+    e.preventDefault()
+
+    if (selectedAnswer === "correct") {
+      setCount(count + 1)
+    }
+
+    if (questionId < quizQuestionsArr.length) {
+      setTimeout(() => setNextQuestion(), 300)
     } else {
-      setResult("Undetermined")
+      setTimeout(() => setResult(true), 300)
     }
   }
-
   return (
     <Layout>
       <SEO title="Home" />
       {result ? (
-        <Result quizResult={result} />
+        <Result quizResult={count} />
       ) : (
-        <Quiz
-          answer={answer}
-          answerOptions={answerOptions}
-          questionId={questionId}
-          question={question}
-          questionTotal={quizQuestions.length}
-          onAnswerSelected={handleAnswerSelected}
-        />
+        <>
+          <form onSubmit={handleSubmit}>
+            <Quiz
+              counter={counter}
+              answer={answer}
+              answerOptions={answerOptions}
+              questionId={questionId}
+              question={question}
+              questionTotal={quizQuestionsArr.length}
+              onAnswerSelected={handleSelectedAnswer}
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </>
       )}
-
-      {/* <Link to="/page-2/">Go to page 2</Link> */}
     </Layout>
   )
 }

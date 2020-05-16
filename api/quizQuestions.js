@@ -1,89 +1,114 @@
 var quizQuestions = [
   {
-    question: "What franchise would you rather play a game from?",
+    question:
+      "What is the official name of the Church of Jesus Christ of Latter-Day Saints?",
     answers: [
       {
-        type: "Microsoft",
-        content: "Halo"
+        type: "wrong",
+        content: "The Mormons",
       },
       {
-        type: "Nintendo",
-        content: "Pokemon"
+        type: "wrong",
+        content: "LDS Church",
       },
       {
-        type: "Sony",
-        content: "Uncharted"
-      }
-    ]
+        type: "correct",
+        content: "The Church of Jesus Christ of Latter-Day Saints",
+      },
+      {
+        type: "wrong",
+        content: "The Mormon Church",
+      },
+    ],
   },
   {
-    question: "Which console would you prefer to play with friends?",
+    question:
+      "Who's the head of the Church of Jesus Christ of Latter-Day Saints?",
     answers: [
       {
-        type: "Microsoft",
-        content: "X-Box"
+        type: "wrong",
+        content: "Mormon",
       },
       {
-        type: "Nintendo",
-        content: "Nintendo 64"
+        type: "wrong",
+        content: "Joseph Smith",
       },
       {
-        type: "Sony",
-        content: "Playstation 1"
-      }
-    ]
+        type: "correct",
+        content: "Jesus Christ",
+      },
+      {
+        type: "wrong",
+        content: "Nephi",
+      },
+    ],
   },
   {
-    question: "Which of these racing franchises would you prefer to play a game from?",
+    question:
+      "What is the official name of the Church of Jesus Christ of Latter-Day Saints?",
     answers: [
       {
-        type: "Microsoft",
-        content: "Forza"
+        type: "wrong",
+        content: "The Mormons",
       },
       {
-        type: "Nintendo",
-        content: "Mario Kart"
+        type: "wrong",
+        content: "LDS Church",
       },
       {
-        type: "Sony",
-        content: "Gran Turismo"
-      }
-    ]
+        type: "correct",
+        content: "The Church of Jesus Christ of Latter-Day Saints",
+      },
+      {
+        type: "wrong",
+        content: "The Mormon Church",
+      },
+    ],
   },
   {
-    question: "Which of these games do you think is best?",
+    question:
+      "What is the official name of the Church of Jesus Christ of Latter-Day Saints?",
     answers: [
       {
-        type: "Microsoft",
-        content: "BioShock"
+        type: "wrong",
+        content: "The Mormons",
       },
       {
-        type: "Nintendo",
-        content: "The Legend of Zelda: Ocarina of Time"
+        type: "wrong",
+        content: "LDS Church",
       },
       {
-        type: "Sony",
-        content: "Final Fantasy VII"
-      }
-    ]
+        type: "correct",
+        content: "The Church of Jesus Christ of Latter-Day Saints",
+      },
+      {
+        type: "wrong",
+        content: "The Mormon Church",
+      },
+    ],
   },
   {
-    question: "What console would you prefer to own?",
+    question:
+      "What is the official name of the Church of Jesus Christ of Latter-Day Saints?",
     answers: [
       {
-        type: "Microsoft",
-        content: "X-Box One"
+        type: "wrong",
+        content: "The Mormons",
       },
       {
-        type: "Nintendo",
-        content: "Wii U"
+        type: "wrong",
+        content: "LDS Church",
       },
       {
-        type: "Sony",
-        content: "Playstation 4"
-      }
-    ]
-  }
-];
+        type: "correct",
+        content: "The Church of Jesus Christ of Latter-Day Saints",
+      },
+      {
+        type: "wrong",
+        content: "The Mormon Church",
+      },
+    ],
+  },
+]
 
-export default quizQuestions;
+export default quizQuestions
