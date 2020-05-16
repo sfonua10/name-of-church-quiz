@@ -4,7 +4,10 @@ import PropTypes from "prop-types"
 const Result = props => {
   return (
     <>
-      <a href="https://facebook.com/sharer/sharer.php?u=https://jovial-ritchie-46bbbe.netlify.app/" />
+      <a href="https://facebook.com/sharer/sharer.php?u=https://jovial-ritchie-46bbbe.netlify.app/">
+        FB
+      </a>
+
       <div className="result">
         You scored <strong>{props.quizResult}</strong> out of 5!
       </div>
