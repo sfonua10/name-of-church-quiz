@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import Quiz from "../components/quiz"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Result from "../components/result"
 import shuffleArray from "../utils/shuffleArray"
 import quizQuestionsArr from "../../api/quizQuestions"
+import ResultsPage from "./results"
 
 const IndexPage = () => {
   const [counter, setCounter] = useState(0)
@@ -57,7 +58,10 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       {result ? (
-        <Result quizResult={count} />
+        <>
+          <Link to="/results">Get Results</Link>
+          {/* <ResultsPage count={count} /> */}
+        </>
       ) : (
         <>
           <form onSubmit={handleSubmit}>
