@@ -6,7 +6,8 @@ import SEO from "../components/seo"
 import Result from "../components/result"
 
 const ResultsPage = ({ location }) => {
-  const count = location.state.count
+  const count = location?.state?.count || 0
+
   return (
     <>
       <SEO
