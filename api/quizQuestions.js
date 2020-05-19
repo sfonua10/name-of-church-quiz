@@ -1,7 +1,6 @@
-var quizQuestions = [
+const quizQuestions = [
   {
-    question:
-      "What is the official name of the Church of Jesus Christ of Latter-Day Saints?",
+    question: "What did Jesus Christ decree his Church to be called?",
     answers: [
       {
         type: "wrong",
@@ -22,8 +21,7 @@ var quizQuestions = [
     ],
   },
   {
-    question:
-      "Who's the head of the Church of Jesus Christ of Latter-Day Saints?",
+    question: "Who named the Church of Jesus Christ of Latter-day Saints?",
     answers: [
       {
         type: "wrong",
@@ -45,11 +43,11 @@ var quizQuestions = [
   },
   {
     question:
-      "What is the official name of the Church of Jesus Christ of Latter-Day Saints?",
+      "There's a famous Children's Primary song that goes like this: \"I belong to ____________\"",
     answers: [
       {
         type: "wrong",
-        content: "The Mormons",
+        content: "Church of the Latter-day Saints",
       },
       {
         type: "wrong",
@@ -66,12 +64,69 @@ var quizQuestions = [
     ],
   },
   {
-    question:
-      "What is the official name of the Church of Jesus Christ of Latter-Day Saints?",
+    question: `What's the most important part in name: "The Church of Jesus Christ of Latter-day Saints"`,
     answers: [
       {
         type: "wrong",
-        content: "The Mormons",
+        content: "The Church",
+      },
+      {
+        type: "wrong",
+        content: "Latter-day Saints",
+      },
+      {
+        type: "correct",
+        content: "Jesus Christ",
+      },
+      {
+        type: "wrong",
+        content: "None",
+      },
+    ],
+  },
+  {
+    question:
+      "True or False: Joseph Smith named the Church restored through him.",
+    answers: [
+      {
+        type: "wrong",
+        content: "True",
+      },
+      {
+        type: "correct",
+        content: "False",
+      },
+    ],
+  },
+  {
+    question:
+      "When a shortened [second] reference is needed, all these terms are appropriate EXCEPT...",
+    answers: [
+      {
+        type: "wrong",
+        content: "The Church",
+      },
+      {
+        type: "correct",
+        content: "LDS Church",
+      },
+      {
+        type: "wrong",
+        content: "Church of Jesus Christ",
+      },
+      {
+        type: "wrong",
+        content: "The restored Church of Jesus Christ",
+      },
+    ],
+  },
+  {
+    question:
+      "What is the correct and official name of the Church of Jesus Christ of Latter-day Saints?",
+    answers: [
+      {
+        type: "wrong",
+        content: "The Church of the Latter-day Saints",
       },
       {
         type: "wrong",
@@ -88,24 +143,24 @@ var quizQuestions = [
     ],
   },
   {
-    question:
-      "What is the official name of the Church of Jesus Christ of Latter-Day Saints?",
+    question: `If someone should ask, "Are you a Mormon?" What may be an appropriate response?`,
     answers: [
       {
         type: "wrong",
-        content: "The Mormons",
+        content: "Yes, I am a Mormon!",
       },
       {
         type: "wrong",
-        content: "LDS Church",
+        content: "I'm LDS",
       },
       {
         type: "correct",
-        content: "The Church of Jesus Christ of Latter-Day Saints",
+        content:
+          "“Yes, I am. I believe in Jesus Christ and am a member of His restored Church.”",
       },
       {
         type: "wrong",
-        content: "The Mormon Church",
+        content: "I'm part of the Church of the Latter-day Saints",
       },
     ],
   },

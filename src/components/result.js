@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-
+import quizQuestions from "../../api/quizQuestions"
 const Result = props => {
   return (
     <>
@@ -9,7 +9,8 @@ const Result = props => {
       </a>
 
       <div className="result">
-        You scored <strong>{props.quizResult}</strong> out of 5!
+        You scored <strong>{props.quizResult}</strong> out of{" "}
+        {quizQuestions.length}!
       </div>
     </>
   )

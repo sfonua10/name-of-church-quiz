@@ -1,27 +1,32 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
 // import { Link } from "gatsby"
-// import Layout from "../components/layout"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Result from "../components/result"
+import { facebook } from "../icons/facebook"
 
 const ResultsPage = ({ location }) => {
   const count = location?.state?.count || 0
 
   return (
-    <>
+    <Layout>
       <SEO
         title="Wonderful Saia"
         description="test saia description"
-        image="https://assets.ldscdn.org/2d/c8/2dc8336c5be57f319e6e80e97f9d8019428e96d7/how_i_hear_him_bednar.jpeg"
-        url="https://www.churchofjesuschrist.org/blog/hearing-him-with-our-minds-and-our-hearts?fbclid=IwAR1qI3bqoTULIENuJ0YXFYGs5B6dvx--nG8p7J1hliiTHSy8CCCM3CmRQPo"
+        image="https://assets.ldscdn.org/c1/2d/c12d468aa729888cc12d38d9e69281b8e4de4fec/alma_the_younger_corianton.jpeg"
+        url="https://www.churchofjesuschrist.org/media/image/alma-the-younger-corianton-3e725dd?lang=eng"
       />
       <h1>Your Score:</h1>
 
       <Result quizResult={count} />
 
+      {/*TO DO: https://stackoverflow.com/questions/26106447/is-it-possible-to-generate-a-share-on-facebook-link-that-opens-the-native-face
+        https://developers.facebook.com/docs/sharing/reference/share-dialog/
+        https://forum.duolingo.com/comment/33205300/I-Made-an-App-to-Supplement-Duolingo-Beautiful-New-App
+        */}
       {/* <Link to="/">Go back to the homepage</Link> */}
-    </>
+    </Layout>
   )
 }
 
