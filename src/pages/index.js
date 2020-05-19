@@ -56,10 +56,12 @@ const IndexPage = () => {
   }
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="YO BUUDDDDY!!!" />
       {result ? (
         <>
-          <Link to="/results">Get Results</Link>
+          <Link to="/results" state={{ count }}>
+            Get Results
+          </Link>
           {/* <ResultsPage count={count} /> */}
         </>
       ) : (

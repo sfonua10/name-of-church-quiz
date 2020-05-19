@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 const Result = props => {
   return (
     <>
-      <a href="https://facebook.com/sharer/sharer.php?u=https://jovial-ritchie-46bbbe.netlify.app/">
+      <a href="https://facebook.com/sharer/sharer.php?u=https://jovial-ritchie-46bbbe.netlify.app/results">
         FB
       </a>
 
