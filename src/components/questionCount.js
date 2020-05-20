@@ -3,9 +3,11 @@ import PropTypes from "prop-types"
 
 const QuestionCount = ({ counter, total }) => {
   return (
-    <div>
-      <span>{counter}</span> / <span>{total}</span>
-    </div>
+    <>
+      <span>
+        {counter} / {total}
+      </span>
+    </>
   )
 }
 

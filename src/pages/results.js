@@ -4,7 +4,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Result from "../components/result"
-import { facebook } from "../icons/facebook"
 
 const ResultsPage = ({ location }) => {
   const count = location?.state?.count || 0
@@ -17,8 +16,6 @@ const ResultsPage = ({ location }) => {
         image="https://assets.ldscdn.org/c1/2d/c12d468aa729888cc12d38d9e69281b8e4de4fec/alma_the_younger_corianton.jpeg"
         url="https://www.churchofjesuschrist.org/media/image/alma-the-younger-corianton-3e725dd?lang=eng"
       />
-      <h1>Your Score:</h1>
-
       <Result quizResult={count} />
 
       {/*TO DO: https://stackoverflow.com/questions/26106447/is-it-possible-to-generate-a-share-on-facebook-link-that-opens-the-native-face

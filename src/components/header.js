@@ -7,6 +7,7 @@ const Header = ({ siteTitle }) => (
     style={{
       background: `#177C9C`,
       marginBottom: `1.45rem`,
+      background: `linear-gradient(80deg, #177C9C 0%, rgba(255, 255, 255, 0.94) 99.99%, rgba(255, 255, 253, 0) 100%)`,
     }}
   >
     <div
@@ -16,16 +17,14 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
+      <h1
+        style={{
+          margin: 0,
+          color: `#FFFCFC`,
+          textShadow: `-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black`,
+        }}
+      >
+        {siteTitle}
       </h1>
     </div>
   </header>

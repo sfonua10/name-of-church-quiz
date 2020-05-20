@@ -13,7 +13,6 @@ const Quiz = ({
   onAnswerSelected,
 }) => {
   const renderAnswerOptions = key => {
-    // console.log("key", key)
     return (
       <AnswerOption
         key={key.content}
@@ -28,8 +27,10 @@ const Quiz = ({
 
   return (
     <>
-      <QuestionCount counter={questionId} total={questionTotal} />
-      <Question content={question} />
+      <span style={{ display: `flex`, justifyContent: `space-between` }}>
+        <Question content={question} />
+        <QuestionCount counter={questionId} total={questionTotal} />
+      </span>
       <ul>{answerOptions.map(renderAnswerOptions)}</ul>
     </>
   )
