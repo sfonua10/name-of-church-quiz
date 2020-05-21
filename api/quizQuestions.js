@@ -130,7 +130,7 @@ const quizQuestions = [
       },
       {
         type: "wrong",
-        content: "LDS Church",
+        content: "The LDS Church",
       },
       {
         type: "correct",

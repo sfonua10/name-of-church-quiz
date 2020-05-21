@@ -5,7 +5,7 @@ const QuestionCount = ({ counter, total }) => {
   return (
     <>
       <span>
-        {counter} / {total}
+        {counter}/{total}
       </span>
     </>
   )

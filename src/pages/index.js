@@ -3,10 +3,9 @@ import { Link } from "gatsby"
 import Quiz from "../components/quiz"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Result from "../components/result"
 import shuffleArray from "../utils/shuffleArray"
 import quizQuestionsArr from "../../api/quizQuestions"
-import ResultsPage from "./results"
+import dieter from "../images/dieter_f_uchtdorf_lds_opt.jpg"
 
 const IndexPage = () => {
   const [counter, setCounter] = useState(0)
@@ -56,13 +55,27 @@ const IndexPage = () => {
   }
   return (
     <Layout>
-      <SEO title="YO BUUDDDDY!!!" />
+      <SEO
+        title="Equipped?"
+        image={dieter}
+        url="https://correct-name-of-church.netlify.app/"
+        description="Test Your Knowledge Of The Correct Name of the Church of Jesus Christ"
+      />
       {result ? (
         <>
-          <Link to="/results" state={{ count }}>
+          <Link
+            style={{
+              backgroundColor: `#177C9C`,
+              padding: `10px`,
+              color: `white`,
+              cursor: `pointer`,
+              textDecoration: `none`,
+            }}
+            to="/results"
+            state={{ count }}
+          >
             Get Results
           </Link>
-          {/* <ResultsPage count={count} /> */}
         </>
       ) : (
         <>
@@ -76,7 +89,17 @@ const IndexPage = () => {
               questionTotal={quizQuestionsArr.length}
               onAnswerSelected={handleSelectedAnswer}
             />
-            <button type="submit">Submit</button>
+            <button
+              style={{
+                backgroundColor: `#177C9C`,
+                padding: `10px`,
+                color: `white`,
+                cursor: `pointer`,
+              }}
+              type="submit"
+            >
+              Submit
+            </button>
           </form>
         </>
       )}

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Test Your Knowledge`,
+    title: `The Church of Jesus Christ of Latter-day Saints`,
     description: `Test your knowledge of the correct name of the Church of Jesus Christ`,
     author: `@saiafonua`,
   },

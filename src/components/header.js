@@ -1,11 +1,9 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#177C9C`,
       marginBottom: `1.45rem`,
       background: `linear-gradient(80deg, #177C9C 0%, rgba(255, 255, 255, 0.94) 99.99%, rgba(255, 255, 253, 0) 100%)`,
     }}

@@ -1,9 +1,9 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
-// import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Result from "../components/result"
+import missionary from "../images/missionaries.png"
 
 const ResultsPage = ({ location }) => {
   const count = location?.state?.count || 0
@@ -11,10 +11,10 @@ const ResultsPage = ({ location }) => {
   return (
     <Layout>
       <SEO
-        title="Wonderful Saia"
-        description="test saia description"
-        image="https://assets.ldscdn.org/c1/2d/c12d468aa729888cc12d38d9e69281b8e4de4fec/alma_the_younger_corianton.jpeg"
-        url="https://www.churchofjesuschrist.org/media/image/alma-the-younger-corianton-3e725dd?lang=eng"
+        title="I Will Share The Correct Name of the Church of Jesus Christ"
+        description="I am equipped with the knowledge of the correct name of the Church of Jesus Christ of Latter-day Saints and I commit to sharing that with the whole world"
+        image={missionary}
+        url="https://www.churchofjesuschrist.org/study/general-conference/2018/10/the-correct-name-of-the-church?lang=eng"
       />
       <Result quizResult={count} />
 
