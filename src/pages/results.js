@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Result from "../components/result"
-import missionary from "../images/missionaries.png"
+import missionaries from "../images/missionaries.png"
 
 const ResultsPage = ({ location }) => {
   const count = location?.state?.count || 0
@@ -12,9 +12,9 @@ const ResultsPage = ({ location }) => {
     <Layout>
       <SEO
         title="I Will Share The Correct Name of the Church of Jesus Christ"
-        description="I am equipped with the knowledge of the correct name of the Church of Jesus Christ of Latter-day Saints and I commit to sharing that with the whole world"
-        image={missionary}
-        url="https://www.churchofjesuschrist.org/study/general-conference/2018/10/the-correct-name-of-the-church?lang=eng"
+        description="I will do my best to restore the correct name of the Lord's Church"
+        image={missionaries}
+        url="https://correct-name-of-church.netlify.app/results"
       />
       <Result quizResult={count} />
 

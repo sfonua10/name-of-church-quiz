@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import shuffleArray from "../utils/shuffleArray"
 import quizQuestionsArr from "../../api/quizQuestions"
-import dieter from "../images/dieter_f_uchtdorf_lds_opt.jpg"
+import callingTheFistermen from "../images/calling_the_fishermen.png"
 
 const IndexPage = () => {
   const [counter, setCounter] = useState(0)
@@ -56,10 +56,10 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO
-        title="Equipped?"
-        image={dieter}
+        title="For thus shall my church be called in the last days..."
+        image={callingTheFistermen}
         url="https://correct-name-of-church.netlify.app/"
-        description="Test Your Knowledge Of The Correct Name of the Church of Jesus Christ"
+        description="do our best to restore the correct name of the Lord’s Church"
       />
       {result ? (
         <>

@@ -21,6 +21,48 @@ const quizQuestions = [
     ],
   },
   {
+    question: `Which modern Prophet said this, "Don’t let the Lord down by calling this the Mormon Church. He didn’t call it the Mormon Church"`,
+    answers: [
+      {
+        type: "wrong",
+        content: "President David O. McKay",
+      },
+      {
+        type: "wrong",
+        content: "President Heber J. Grant",
+      },
+      {
+        type: "correct",
+        content: "President George Albert Smith",
+      },
+      {
+        type: "wrong",
+        content: "President Spencer W. Kimball",
+      },
+    ],
+  },
+  {
+    question: `When referring to the Church, please do NOT use:`,
+    answers: [
+      {
+        type: "wrong",
+        content: "LDS Church",
+      },
+      {
+        type: "wrong",
+        content: "All of these choices",
+      },
+      {
+        type: "correct",
+        content: "Mormon Church",
+      },
+      {
+        type: "wrong",
+        content: "Church of the Latter-day Saints",
+      },
+    ],
+  },
+  {
     question: "Who named the Church of Jesus Christ of Latter-day Saints?",
     answers: [
       {
