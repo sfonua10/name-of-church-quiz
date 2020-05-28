@@ -5,7 +5,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       marginBottom: `1.45rem`,
-      background: `linear-gradient(80deg, #177C9C 0%, rgba(255, 255, 255, 0.94) 99.99%, rgba(255, 255, 253, 0) 100%)`,
+      background: `linear-gradient(80deg, #023057 0%, rgba(255, 255, 255, 0.94) 99.99%, rgba(255, 255, 253, 0) 100%)`,
     }}
   >
     <div

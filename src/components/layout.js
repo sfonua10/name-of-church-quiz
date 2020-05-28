@@ -11,7 +11,15 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import styled from "styled-components"
 
+const Card = styled.div`
+  margin: 0 auto;
+  max-width: 550px;
+  padding: 2rem;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+`
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -26,21 +34,14 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 550,
-          padding: `2rem .5rem`,
-          boxShadow: `0px 3px 7px rgba(0, 0, 0, 0.10)`,
-        }}
-      >
+      <Card>
         <main>{children}</main>
         {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Love</a>
         </footer> */}
-      </div>
+      </Card>
     </>
   )
 }

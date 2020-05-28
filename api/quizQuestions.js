@@ -19,6 +19,8 @@ const quizQuestions = [
         content: "The Mormon Church",
       },
     ],
+    source:
+      "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/115.4?lang=eng#p4#4",
   },
   {
     question: `Which modern Prophet said this, "Don’t let the Lord down by calling this the Mormon Church. He didn’t call it the Mormon Church"`,
@@ -40,6 +42,8 @@ const quizQuestions = [
         content: "President Spencer W. Kimball",
       },
     ],
+    source:
+      "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/115.4?lang=eng#p4#4",
   },
   {
     question: `When referring to the Church, please do NOT use:`,
@@ -61,6 +65,8 @@ const quizQuestions = [
         content: "Church of the Latter-day Saints",
       },
     ],
+    source:
+      "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/115.4?lang=eng#p4#4",
   },
   {
     question: "Who named the Church of Jesus Christ of Latter-day Saints?",
@@ -82,6 +88,8 @@ const quizQuestions = [
         content: "Nephi",
       },
     ],
+    source:
+      "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/115.4?lang=eng#p4#4",
   },
   {
     question:
@@ -104,6 +112,8 @@ const quizQuestions = [
         content: "The Mormon Church",
       },
     ],
+    source:
+      "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/115.4?lang=eng#p4#4",
   },
   {
     question: `What's the most important part in name: "The Church of Jesus Christ of Latter-day Saints"`,
@@ -125,6 +135,8 @@ const quizQuestions = [
         content: "None",
       },
     ],
+    source:
+      "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/115.4?lang=eng#p4#4",
   },
   {
     question:
@@ -139,6 +151,8 @@ const quizQuestions = [
         content: "False",
       },
     ],
+    source:
+      "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/115.4?lang=eng#p4#4",
   },
   {
     question:
@@ -161,6 +175,8 @@ const quizQuestions = [
         content: "The restored Church of Jesus Christ",
       },
     ],
+    source:
+      "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/115.4?lang=eng#p4#4",
   },
   {
     question:
@@ -183,6 +199,8 @@ const quizQuestions = [
         content: "The Mormon Church",
       },
     ],
+    source:
+      "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/115.4?lang=eng#p4#4",
   },
   {
     question: `If someone should ask, "Are you a Mormon?" What may be an appropriate response?`,
@@ -205,6 +223,8 @@ const quizQuestions = [
         content: "I'm part of the Church of the Latter-day Saints",
       },
     ],
+    source:
+      "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/115.4?lang=eng#p4#4",
   },
 ]
 

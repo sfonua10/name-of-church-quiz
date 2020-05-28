@@ -91,7 +91,7 @@ const IndexPage = () => {
             />
             <button
               style={{
-                backgroundColor: `#177C9C`,
+                backgroundColor: `#023057`,
                 padding: `10px`,
                 color: `white`,
                 cursor: `pointer`,
