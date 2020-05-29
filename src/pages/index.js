@@ -71,7 +71,10 @@ const IndexPage = () => {
         description="do our best to restore the correct name of the Lord’s Church"
       />
       {!login ? (
-        <Login onLogin={handleLogin} />
+        <React.Fragment>
+          <p>To take the quiz, login in with Facebook</p>
+          <Login onLogin={handleLogin} />
+        </React.Fragment>
       ) : (
         <>
           <form onSubmit={handleSubmit}>
