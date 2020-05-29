@@ -6,8 +6,11 @@ import SEO from "../components/seo"
 import shuffleArray from "../utils/shuffleArray"
 import quizQuestionsArr from "../../api/quizQuestions"
 import callingTheFistermen from "../images/calling_the_fishermen.png"
+import Login from "../components/login"
 
 const IndexPage = () => {
+  const [login, setLogin] = useState(false)
+  const [userData, setUserData] = useState({})
   const [counter, setCounter] = useState(0)
   const [questionId, setQuestionId] = useState(1)
   const [question, setQuestion] = useState("")
@@ -53,6 +56,12 @@ const IndexPage = () => {
       setTimeout(() => setResult(true), 300)
     }
   }
+  const handleLogin = (auth, userData) => {
+    if(auth === true) {
+      setLogin(true)
+      setUserData(userData)
+    }
+  }
   return (
     <Layout>
       <SEO
@@ -61,22 +70,8 @@ const IndexPage = () => {
         url="https://correct-name-of-church.netlify.app/"
         description="do our best to restore the correct name of the Lord’s Church"
       />
-      {result ? (
-        <>
-          <Link
-            style={{
-              backgroundColor: `#177C9C`,
-              padding: `10px`,
-              color: `white`,
-              cursor: `pointer`,
-              textDecoration: `none`,
-            }}
-            to="/results"
-            state={{ count }}
-          >
-            Get Results
-          </Link>
-        </>
+      {!login ? (
+        <Login onLogin={handleLogin} />
       ) : (
         <>
           <form onSubmit={handleSubmit}>
