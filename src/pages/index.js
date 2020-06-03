@@ -7,7 +7,6 @@ import shuffleArray from "../utils/shuffleArray"
 import quizQuestionsArr from "../../api/quizQuestions"
 import callingTheFistermen from "../images/calling_the_fishermen.png"
 import Login from "../components/login"
-import Result from "../components/result"
 
 const IndexPage = () => {
   const [login, setLogin] = useState(false)
