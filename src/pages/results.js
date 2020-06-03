@@ -7,6 +7,7 @@ import missionaries from "../images/missionaries.png"
 
 const ResultsPage = ({ location }) => {
   const count = location?.state?.count || 0
+  const userData = location?.state?.userData
 
   return (
     <Layout>
@@ -16,7 +17,7 @@ const ResultsPage = ({ location }) => {
         image={missionaries}
         url="https://correct-name-of-church.netlify.app/results"
       />
-      <Result quizResult={count} />
+      <Result quizResult={count} userData={userData} />
 
       {/*TO DO: https://stackoverflow.com/questions/26106447/is-it-possible-to-generate-a-share-on-facebook-link-that-opens-the-native-face
         https://developers.facebook.com/docs/sharing/reference/share-dialog/

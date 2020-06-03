@@ -11,7 +11,7 @@ const Result = props => {
   return (
     <>
       <div className="result">
-        You scored <strong>{props.quizResult}</strong> out of{" "}
+        <img src={props.userData.picture.data.url} /> You scored <strong>{props.quizResult}</strong> out of{" "}
         {quizQuestions.length}!
       </div>
       {props.quizResult >= 0 && (

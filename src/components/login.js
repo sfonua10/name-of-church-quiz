@@ -14,7 +14,7 @@ const Login = ({ onLogin }) => {
     <FacebookLogin
       appId="620898128511817"
       autoLoad={false}
-      fields="name,email,picture"
+      fields="name,picture"
       onClick={onLogin}
       callback={responseFacebook}
   />
